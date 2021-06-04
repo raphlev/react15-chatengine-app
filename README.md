@@ -193,3 +193,14 @@ REACT_APP_APP_ID = 1:1094542386816:web:d071b2818a1a0f3be0a865
 
 - upload to GITHUB > react15-chatengine-app > master branch
 - vercel account > link github account > project - GIT > repository name = react15-chatengine-app > save..
+
+# Issues
+
+- add display none into Chat.jsx > ChatEngine component to fix the hideUI={true} that does not work
+- TypeError: selectedChat.messages is not iterable: Chat.jsx
+    52 | if (selectedChat && chatId === selectedChat.id) {
+    53 |   setSelectedChat({
+    54 |     ...selectedChat,
+  > 55 |     messages: [...selectedChat.messages, message],
+       | ^  56 |   });
+- production env (vercel): I needed to update the firebase package to a more recent release otherwise build was failing, I took latest one 8.6.5. I properly setup the 7 env variables in the vercel CLI as done in the video, but I still have an issue at run-time with the env variables. auth/invalid-api-key: Your API key is invalid, please check you have copied it correctly.. some changes in firebase SDK ?! Maybe someone got same issue?
