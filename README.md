@@ -113,7 +113,18 @@ REACT_APP_PROJECT_ID = chatengine-94abf
 REACT_APP_STORAGE_BUCKET = chatengine-94abf.appspot.com
 REACT_APP_MESSAGING_SENDER_ID = 1094542386816
 REACT_APP_APP_ID = 1:1094542386816:web:d071b2818a1a0f3be0a865
-
+- list vercel environment variables (server side)
+vercel env ls
+- Environment Variables:   https://vercel.com/docs/cli#commands/env
+Environment Variables created for the Development Environment can be downloaded into a local development setup using the vercel env pull command provided by Vercel CLI:
+vercel env pull
+Running the command will create a .env file in the current directory, which can then be consumed by your framework's Development Command (like next dev).
+If you're using vercel dev, there's no need to run vercel env pull, as vercel dev automatically downloads the Development Environment Variables into memory.
+Basic usage
+vercel env ls: Using the vercel env command to list all Environment Variables in a Project.
+vercel env add: Using the vercel env command to add an Environment Variable to a Project.
+vercel env rm: Using the vercel env command to remove an Environment Variable from a Project.
+vercel env pull: Using the vercel env command to download Development Environment Variables from the cloud and write to a local .env file.
 
 ## Formik = easy react popular library for handling forms > integrated with Yup > easy to use with integrated api
 
