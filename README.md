@@ -128,7 +128,7 @@ vercel env pull: Using the vercel env command to download Development Environmen
 
 ## Formik = easy react popular library for handling forms > integrated with Yup > easy to use with integrated api
 
-- needs 4 props: see Signup.jsx
+- needs 4 props:  see Signup.jsx
 - we need yup for forms validation > yup describes a validation schema with shape pattern that is easy to understand, and it includes string message for each pattern if validation fails
 - we pass in a function as child element of Formik since we need to get some variables from Formik ccomponent to process field validations and to process button click
   is Valid: automatically generated from validationSchema
